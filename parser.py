@@ -24,7 +24,7 @@ def get_content(html):
         url = item.get('href')
         if url[0]!='#':
             print(url)
-            urllib.request.urlretrieve(HOST+url, 'C:/Users/Admin/Desktop/python/console_game/zelvar/sprites/'+os.path.basename(url))
+            urllib.request.urlretrieve(HOST+url, 'YOURPATHTOSPRITES'+os.path.basename(url))
 
 
 def parser(URL):
