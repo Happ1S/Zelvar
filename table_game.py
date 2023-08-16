@@ -1,7 +1,6 @@
 import pygame
 import random
 import button
-from PIL import Image
 import os
 
 FPS = 60
