@@ -20,13 +20,6 @@ active_tcard = None
 random.shuffle(cards)
 play = True
 
-#
-'''
-box = pygame.Rect(300, 300, cb1.get_size()[0]/16, cb1.get_size()[1]/16)
-rects.append(box)
-'''
-#
-
 while play:
     state = pygame.mouse.get_pressed()
     clock.tick(FPS)
