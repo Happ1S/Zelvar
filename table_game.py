@@ -48,7 +48,6 @@ while play:
 
         if event.type == pygame.MOUSEMOTION:
             if active_tcard != None:
-                print(event.rel)
                 coords[active_tcard][0] += event.rel[0]
                 coords[active_tcard][1] += event.rel[1]
         if event.type == pygame.QUIT:
