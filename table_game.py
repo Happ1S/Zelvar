@@ -11,15 +11,23 @@ card_button = pygame.image.load('card_button.png')
 cb1 = pygame.image.load('card_button.png')
 card_button = pygame.transform.scale(card_button, (card_button.get_size()[0]/4, card_button.get_size()[1]/4))
 card_button = button.Button(W//2-card_button.get_size()[0]/2, H//2-card_button.get_size()[1]/2, card_button, 1)
+<<<<<<< HEAD
 cards = [pygame.image.load(f'sprites/{file}') for file in os.listdir('D:/python_projects/console_game/zelvar/sprites')]
 cards = [pygame.transform.scale(card, (card.get_size()[0]/2, card.get_size()[1]/2)) for card in cards]
+=======
+cards = [pygame.image.load(f'sprites/{file}') for file in os.listdir('PATHTOWORKDIR/sprites')]
+cards = [pygame.transform.scale(card, (card.get_size()[0]/1.5, card.get_size()[1]/1.5)) for card in cards]
+>>>>>>> b3178a6fe8c5e5d1aa4486d4d1d9771bfcefdd03
 rects = list()
 coords = list()
 table_cards = list()
 active_tcard = None
 random.shuffle(cards)
 play = True
+<<<<<<< HEAD
 zoom = False
+=======
+>>>>>>> b3178a6fe8c5e5d1aa4486d4d1d9771bfcefdd03
 
 while play:
     state = pygame.mouse.get_pressed()
