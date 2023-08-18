@@ -14,11 +14,6 @@ card_button = pygame.transform.scale(card_button, (card_button.get_size()[0]/4, 
 card_button = button.Button(W//2-card_button.get_size()[0]/2, H//2-card_button.get_size()[1]/2, card_button, 1)
 cards = [pygame.image.load(f'sprites/{file}') for file in os.listdir('D:/python_projects/console_game/zelvar/sprites')]
 cards = [pygame.transform.scale(card, (card.get_size()[0]/2, card.get_size()[1]/2)) for card in cards]
-<<<<<<< HEAD
-=======
-cards = [pygame.image.load(f'sprites/{file}') for file in os.listdir('PATHTOWORKDIR/sprites')]
-cards = [pygame.transform.scale(card, (card.get_size()[0]/1.5, card.get_size()[1]/1.5)) for card in cards]
->>>>>>> 3847c8c117079fd6c4f843746ed242d91dbb79b0
 rects = list()
 coords = list()
 table_cards = list()
